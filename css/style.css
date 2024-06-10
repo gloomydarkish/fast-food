@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    background: coral;
+    font-family: sans-serif;
+}
+
+.fast {
+    padding: 50px 0;
+}
+
+.fast h1 {
+    color: black;
+    font-size: 57px;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/*.fast-food {*/
+/*    padding: 100px 0;*/
+
+/*}*/
+
+.fast-food label {
+    color: white;
+    background: brown;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin: 0 19px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs img {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    margin: 100px 15px 0 15px;
+}
+
+#Pizza:checked ~ .Burger,
+#Pizza:checked ~ .Hot,
+#Pizza:checked ~ .Chicken,
+#Pizza:checked ~ .Fries,
+#Pizza:checked ~ .Ice {
+    display: none;
+}
+
+#Burger:checked ~ .Pizza,
+#Burger:checked ~ .Hot,
+#Burger:checked ~ .Chicken,
+#Burger:checked ~ .Fries,
+#Burger:checked ~ .Ice {
+    display: none;
+}
+
+#Hot\ Dog:checked ~ .Pizza,
+#Hot\ Dog:checked ~ .Burger,
+#Hot\ Dog:checked ~ .Chicken,
+#Hot\ Dog:checked ~ .Fries,
+#Hot\ Dog:checked ~ .Ice {
+    display: none;
+}
+
+#Chicken\ Strips:checked ~ .Pizza,
+#Chicken\ Strips:checked ~ .Burger,
+#Chicken\ Strips:checked ~ .Hot,
+#Chicken\ Strips:checked ~ .Fries,
+#Chicken\ Strips:checked ~ .Ice {
+    display: none;
+}
+
+#Fries:checked ~ .Pizza,
+#Fries:checked ~ .Burger,
+#Fries:checked ~ .Hot,
+#Fries:checked ~ .Chicken,
+#Fries:checked ~ .Ice {
+    display: none;
+}
+
+#Ice\ Cream:checked ~ .Pizza,
+#Ice\ Cream:checked ~ .Burger,
+#Ice\ Cream:checked ~ .Hot,
+#Ice\ Cream:checked ~ .Chicken,
+#Ice\ Cream:checked ~ .Fries {
+    display: none;
+}
